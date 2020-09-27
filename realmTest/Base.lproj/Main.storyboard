@@ -89,16 +89,28 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="登録"/>
+                                <connections>
+                                    <action selector="pushRegist:" destination="Stx-3L-v90" eventType="touchUpInside" id="mtA-xG-3EP"/>
+                                </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="IJN-dg-Ccp">
                                 <rect key="frame" x="0.0" y="279" width="414" height="617"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Stx-3L-v90" id="Owc-YZ-2E2"/>
+                                    <outlet property="delegate" destination="Stx-3L-v90" id="aPT-I9-ZF4"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="QoE-K4-Zue"/>
                     </view>
+                    <connections>
+                        <outlet property="addressField" destination="38i-X9-aH3" id="V7R-4v-P1c"/>
+                        <outlet property="nameField" destination="WtI-6V-0kN" id="bOS-EQ-Iv2"/>
+                        <outlet property="table" destination="IJN-dg-Ccp" id="iaF-6Y-D7o"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BhW-we-byB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
