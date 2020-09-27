@@ -8,12 +8,57 @@ class View3Controller: UIViewController, UITableViewDelegate, UITableViewDataSou
     
     @IBOutlet weak var table: UITableView!
     
+    var shopList : [
+        (
+        name:String , address:String, latitude:Double, longitude:Double,
+        note:String , identifier:String
+        )
+    ] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Interface Builderのファイルを読み込む
+        let nib = UINib(nibName: "placeCell", bundle: nil)
+        
+        // UITableViewに登録する。NewsCellを使用するという宣言
+        table.register(nib, forCellReuseIdentifier: "placeCell")
 
     }
 
     @IBAction func pushRegist(_ sender: Any) {
+        //PlaceInstance.name = self.nameField.text
+        //PlaceInstance.address = self.addressField.text
+        shopList.append( (
+            name : self.nameField.text! ,
+            address : self.addressField.text!,
+            latitude : 0.0,
+            longitude : 0.0,
+            note : "hoge",
+            identifier : "hoge"
+        ) )
+        
+        // テーブル再読み込み
+        self.table.reloadData()
+        
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return shopList.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "placeCell",
+        for: indexPath) as! placeCell
+        
+        cell.nameLabel.text = shopList[indexPath.row].name
+        cell.addressLabel.text = shopList[indexPath.row].address
+        
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
     }
     
 }
