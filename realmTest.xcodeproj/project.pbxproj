@@ -16,6 +16,8 @@
 		7D0E7AA5251F946B0051D64D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D0E7AA3251F946B0051D64D /* LaunchScreen.storyboard */; };
 		7DE344242520CDAA00843543 /* View3Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE344232520CDAA00843543 /* View3Controller.swift */; };
 		7DE344262520CE4000843543 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE344252520CE4000843543 /* Place.swift */; };
+		7DE344292520D0C200843543 /* placeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE344272520D0C200843543 /* placeCell.swift */; };
+		7DE3442A2520D0C200843543 /* placeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7DE344282520D0C200843543 /* placeCell.xib */; };
 		7DEE04EB251FA15F0038F1EF /* View2Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEE04EA251FA15F0038F1EF /* View2Controller.swift */; };
 		7DEE04ED251FA4070038F1EF /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEE04EC251FA4070038F1EF /* Memo.swift */; };
 		951FDE209565FD8A8D2E5FC7 /* Pods_realmTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20DFF9880C8F39C3F12FD68D /* Pods_realmTest.framework */; };
@@ -35,6 +37,8 @@
 		7D0E7AA6251F946B0051D64D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7DE344232520CDAA00843543 /* View3Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View3Controller.swift; sourceTree = "<group>"; };
 		7DE344252520CE4000843543 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		7DE344272520D0C200843543 /* placeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = placeCell.swift; sourceTree = "<group>"; };
+		7DE344282520D0C200843543 /* placeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = placeCell.xib; sourceTree = "<group>"; };
 		7DEE04EA251FA15F0038F1EF /* View2Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View2Controller.swift; sourceTree = "<group>"; };
 		7DEE04EC251FA4070038F1EF /* Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
 		C80C1A31B53310C3DC9C683A /* Pods-realmTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-realmTest.release.xcconfig"; path = "Target Support Files/Pods-realmTest/Pods-realmTest.release.xcconfig"; sourceTree = "<group>"; };
@@ -87,6 +91,8 @@
 				7D0E7A9C251F94680051D64D /* ViewController.swift */,
 				7DEE04EC251FA4070038F1EF /* Memo.swift */,
 				7D0E7A9E251F94680051D64D /* Main.storyboard */,
+				7DE344272520D0C200843543 /* placeCell.swift */,
+				7DE344282520D0C200843543 /* placeCell.xib */,
 				7DE344252520CE4000843543 /* Place.swift */,
 				7DEE04EA251FA15F0038F1EF /* View2Controller.swift */,
 				7D0E7AA1251F946B0051D64D /* Assets.xcassets */,
@@ -169,6 +175,7 @@
 				7D0E7AA5251F946B0051D64D /* LaunchScreen.storyboard in Resources */,
 				7D0E7AA2251F946B0051D64D /* Assets.xcassets in Resources */,
 				7D0E7AA0251F94680051D64D /* Main.storyboard in Resources */,
+				7DE3442A2520D0C200843543 /* placeCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,6 +230,7 @@
 			files = (
 				7D0E7A9D251F94680051D64D /* ViewController.swift in Sources */,
 				7DEE04EB251FA15F0038F1EF /* View2Controller.swift in Sources */,
+				7DE344292520D0C200843543 /* placeCell.swift in Sources */,
 				7DE344242520CDAA00843543 /* View3Controller.swift in Sources */,
 				7DE344262520CE4000843543 /* Place.swift in Sources */,
 				7D0E7A99251F94680051D64D /* AppDelegate.swift in Sources */,
