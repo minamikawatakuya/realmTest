@@ -23,20 +23,25 @@ class View3Controller: UIViewController, UITableViewDelegate, UITableViewDataSou
         
         // UITableViewに登録する。NewsCellを使用するという宣言
         table.register(nib, forCellReuseIdentifier: "placeCell")
+        
+        
 
     }
 
     @IBAction func pushRegist(_ sender: Any) {
         //PlaceInstance.name = self.nameField.text
         //PlaceInstance.address = self.addressField.text
-        shopList.append( (
+        //array.insert("piyo", atIndex: 0)
+        
+        //shopList.append( (
+        shopList.insert( (
             name : self.nameField.text! ,
             address : self.addressField.text!,
             latitude : 0.0,
             longitude : 0.0,
             note : "hoge",
             identifier : "hoge"
-        ) )
+            ) , at: 0)
         
         // テーブル再読み込み
         self.table.reloadData()
