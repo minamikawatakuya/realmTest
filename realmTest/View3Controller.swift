@@ -1,7 +1,7 @@
 
 import UIKit
 
-class View3Controller: UIViewController {
+class View3Controller: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var nameField: UITextField!
     @IBOutlet weak var addressField: UITextField!
