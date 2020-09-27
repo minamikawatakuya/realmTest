@@ -8,12 +8,15 @@ class View3Controller: UIViewController, UITableViewDelegate, UITableViewDataSou
     
     @IBOutlet weak var table: UITableView!
     
+    /*
     var shopList : [
         (
         name:String , address:String, latitude:Double, longitude:Double,
         note:String , identifier:String
         )
     ] = []
+ */
+    var shopList : [Place] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,6 +37,7 @@ class View3Controller: UIViewController, UITableViewDelegate, UITableViewDataSou
         //array.insert("piyo", atIndex: 0)
         
         //shopList.append( (
+        /*
         shopList.insert( (
             name : self.nameField.text! ,
             address : self.addressField.text!,
@@ -42,6 +46,19 @@ class View3Controller: UIViewController, UITableViewDelegate, UITableViewDataSou
             note : "hoge",
             identifier : "hoge"
             ) , at: 0)
+ */
+        // モデルクラスのインスタンスを取得
+        let PlaceInstance:Place = Place()
+         
+        // テキスト入力値をインスタンスに詰める
+        PlaceInstance.name = self.nameField.text!
+        PlaceInstance.address = self.addressField.text!
+        PlaceInstance.latitude = 0.0
+        PlaceInstance.longitude = 0.0
+        PlaceInstance.note = "hoge"
+        PlaceInstance.identifier = "hoge"
+        
+        shopList.insert( PlaceInstance , at: 0)
         
         // テーブル再読み込み
         self.table.reloadData()
