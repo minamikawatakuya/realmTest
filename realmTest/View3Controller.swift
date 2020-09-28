@@ -63,6 +63,9 @@ class View3Controller: UIViewController, UITableViewDelegate, UITableViewDataSou
         // テーブル再読み込み
         self.table.reloadData()
         
+        self.nameField.text = "";
+        self.addressField.text = "";
+        
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
