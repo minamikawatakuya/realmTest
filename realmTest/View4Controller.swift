@@ -8,6 +8,7 @@
 
 import UIKit
 import RealmSwift
+import MapKit
 
 class View4Controller: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -79,6 +80,18 @@ class View4Controller: UIViewController, UITableViewDelegate, UITableViewDataSou
         
         cell.nameLabel.text = tmpCell.name
         cell.addressLabel.text = tmpCell.address
+        
+        let address = tmpCell.address!
+        CLGeocoder().geocodeAddressString(address) { placemarks, error in
+            if let lat = placemarks?.first?.location?.coordinate.latitude {
+                print("緯度 : \(lat)")
+                cell.latitudeLabel.text = String(lat)
+            }
+            if let lng = placemarks?.first?.location?.coordinate.longitude {
+                print("経度 : \(lng)")
+                cell.longitudeLabel.text = String(lng)
+            }
+        }
         
         return cell
         
