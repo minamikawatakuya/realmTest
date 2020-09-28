@@ -17,7 +17,7 @@ class View4Controller: UIViewController, UITableViewDelegate, UITableViewDataSou
     @IBOutlet weak var table: UITableView!
     
     // モデルクラスを使用し、取得データを格納する変数を作成
-    var tableCells: Results<Memo2>!
+    var tableCells: Results<Place3>!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,13 +32,13 @@ class View4Controller: UIViewController, UITableViewDelegate, UITableViewDataSou
         let realm = try! Realm()
          
         // データ全権取得
-        self.tableCells = realm.objects(Memo2.self)
+        self.tableCells = realm.objects(Place3.self)
     }
     
     @IBAction func pushButton(_ sender: Any) {
         
         // モデルクラスのインスタンスを取得
-        let MemoInstance:Memo2 = Memo2()
+        let MemoInstance:Place3 = Place3()
          
         // テキスト入力値をインスタンスに詰める
         //MemoInstance.memo = self.textField.text
@@ -76,7 +76,7 @@ class View4Controller: UIViewController, UITableViewDelegate, UITableViewDataSou
         let cell = tableView.dequeueReusableCell(withIdentifier: "placeCell",
         for: indexPath) as! placeCell
         
-        let tmpCell: Memo2 = self.tableCells[(indexPath as NSIndexPath).row];
+        let tmpCell: Place3 = self.tableCells[(indexPath as NSIndexPath).row];
         
         cell.nameLabel.text = tmpCell.name
         cell.addressLabel.text = tmpCell.address
