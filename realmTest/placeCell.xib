@@ -49,6 +49,8 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="addressLabel" destination="Rv2-1d-ANA" id="oXL-u1-i02"/>
+                <outlet property="latitudeLabel" destination="Nzd-eP-Dgo" id="BXC-eA-6DA"/>
+                <outlet property="longitudeLabel" destination="Gb8-tB-4Ln" id="bA7-1d-Fq7"/>
                 <outlet property="nameLabel" destination="leA-jF-QsZ" id="kGn-al-nGm"/>
             </connections>
             <point key="canvasLocation" x="131.8840579710145" y="127.23214285714285"/>
