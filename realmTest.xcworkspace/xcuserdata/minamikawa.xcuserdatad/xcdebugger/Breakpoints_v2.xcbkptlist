@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "02EF26C5-CB79-4811-8D26-8A8F347D6008"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CF3C404D-2520-4B2F-8F49-8237BD794E68"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "realmTest/Place2.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "9"
+            endingLineNumber = "9"
+            landmarkName = "Place2"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "CF3C404D-2520-4B2F-8F49-8237BD794E68 - db77ba87cbc5538e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "realmTest.Place2.name.getter : Swift.Optional&lt;Swift.String&gt;"
+                  moduleName = "realmTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/minamikawa/Desktop/swift/realmTest/realmTest/Place2.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "9"
+                  endingLineNumber = "9"
+                  offsetFromSymbolStart = "202">
+               </Location>
+               <Location
+                  uuid = "CF3C404D-2520-4B2F-8F49-8237BD794E68 - a34222e0b94fe382"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "realmTest.Place2.name.setter : Swift.Optional&lt;Swift.String&gt;"
+                  moduleName = "realmTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/minamikawa/Desktop/swift/realmTest/realmTest/Place2.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "9"
+                  endingLineNumber = "9"
+                  offsetFromSymbolStart = "295">
+               </Location>
+               <Location
+                  uuid = "CF3C404D-2520-4B2F-8F49-8237BD794E68 - c37e949509acffb3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "realmTest.Place2.name.modify : Swift.Optional&lt;Swift.String&gt;"
+                  moduleName = "realmTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/minamikawa/Desktop/swift/realmTest/realmTest/Place2.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "26">
+               </Location>
+               <Location
+                  uuid = "CF3C404D-2520-4B2F-8F49-8237BD794E68 - 93de7ca0cc683b82"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "realmTest.Place2.name.modify : Swift.Optional&lt;Swift.String&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "realmTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/minamikawa/Desktop/swift/realmTest/realmTest/Place2.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "9"
+                  endingLineNumber = "9"
+                  offsetFromSymbolStart = "30">
+               </Location>
+               <Location
+                  uuid = "CF3C404D-2520-4B2F-8F49-8237BD794E68 - aa3b7a635687499b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "realmTest.Place2.init() -&gt; realmTest.Place2"
+                  moduleName = "realmTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/minamikawa/Desktop/swift/realmTest/realmTest/Place2.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "9"
+                  endingLineNumber = "9"
+                  offsetFromSymbolStart = "61">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
