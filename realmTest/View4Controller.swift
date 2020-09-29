@@ -81,8 +81,10 @@ class View4Controller: UIViewController, UITableViewDelegate, UITableViewDataSou
         //cell.nameLabel.text = tmpCell.name
         //cell.addressLabel.text = tmpCell.address
         
+        cell.idField.text = tmpCell.id
         cell.nameField.text = tmpCell.name
         cell.addressField.text = tmpCell.address
+        cell.identifierField.text = tmpCell.identifier
         
         let address = tmpCell.address!
         CLGeocoder().geocodeAddressString(address) { placemarks, error in
