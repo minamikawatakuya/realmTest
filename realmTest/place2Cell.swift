@@ -1,0 +1,35 @@
+//
+//  place2Cell.swift
+//  realmTest
+//
+//  Created by minamikawa on 2020/09/29.
+//  Copyright © 2020 minamikawa. All rights reserved.
+//
+
+import UIKit
+
+class place2Cell: UITableViewCell {
+    
+    @IBOutlet weak var idField: UITextField!
+    @IBOutlet weak var nameField: UITextField!
+    @IBOutlet weak var addressField: UITextField!
+    @IBOutlet weak var identifierField: UITextField!
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        // Initialization code
+        //nameField.text = "name"
+        //addressField.text = "address"
+        
+    }
+
+    override func setSelected(_ selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
+
+        // Configure the view for the selected state
+    }
+    
+    @IBAction func pushUpdate(_ sender: Any) {
+    }
+    
+}

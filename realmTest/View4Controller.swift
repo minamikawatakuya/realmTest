@@ -24,10 +24,10 @@ class View4Controller: UIViewController, UITableViewDelegate, UITableViewDataSou
         super.viewDidLoad()
         
         // Interface Builderのファイルを読み込む
-        let nib = UINib(nibName: "placeCell", bundle: nil)
+        let nib = UINib(nibName: "place2Cell", bundle: nil)
         
         // UITableViewに登録する。NewsCellを使用するという宣言
-        table.register(nib, forCellReuseIdentifier: "placeCell")
+        table.register(nib, forCellReuseIdentifier: "place2Cell")
 
         // Realmインスタンス取得
         let realm = try! Realm()
@@ -73,23 +73,26 @@ class View4Controller: UIViewController, UITableViewDelegate, UITableViewDataSou
         //let tmpCell: Memo = self.tableCells[(indexPath as NSIndexPath).row];
         //cell.textLabel?.text = tmpCell.memo
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "placeCell",
-        for: indexPath) as! placeCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "place2Cell",
+        for: indexPath) as! place2Cell
         
         let tmpCell: Place4 = self.tableCells[(indexPath as NSIndexPath).row];
         
-        cell.nameLabel.text = tmpCell.name
-        cell.addressLabel.text = tmpCell.address
+        //cell.nameLabel.text = tmpCell.name
+        //cell.addressLabel.text = tmpCell.address
+        
+        cell.nameField.text = tmpCell.name
+        cell.addressField.text = tmpCell.address
         
         let address = tmpCell.address!
         CLGeocoder().geocodeAddressString(address) { placemarks, error in
             if let lat = placemarks?.first?.location?.coordinate.latitude {
                 print("緯度 : \(lat)")
-                cell.latitudeLabel.text = String(lat)
+                //cell.latitudeLabel.text = String(lat)
             }
             if let lng = placemarks?.first?.location?.coordinate.longitude {
                 print("経度 : \(lng)")
-                cell.longitudeLabel.text = String(lng)
+                //cell.longitudeLabel.text = String(lng)
             }
         }
         
@@ -98,7 +101,8 @@ class View4Controller: UIViewController, UITableViewDelegate, UITableViewDataSou
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 124
+        //return 124
+        return 248
     }
 
 }
