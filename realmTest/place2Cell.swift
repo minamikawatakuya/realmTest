@@ -29,7 +29,16 @@ class place2Cell: UITableViewCell {
     }
     
     @IBAction func pushUpdate(_ sender: Any) {
-        print(self.nameField.text!)
+        //print(self.nameField.text!)
+        
+        let realm = try! Realm()
+        let places = realm.objects(Place4.self).filter("name like '"+self.nameField.text!+"'")
+                
+        places.forEach { place in
+            try! realm.write() {
+                place.address = self.addressField.text!
+            }
+        }
     }
     
 }
