@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 class place2Cell: UITableViewCell {
     
@@ -18,8 +19,6 @@ class place2Cell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        //nameField.text = "name"
-        //addressField.text = "address"
         
     }
 
@@ -30,6 +29,7 @@ class place2Cell: UITableViewCell {
     }
     
     @IBAction func pushUpdate(_ sender: Any) {
+        print(self.nameField.text!)
     }
     
 }
